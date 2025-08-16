@@ -1,0 +1,185 @@
+/* General page styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd); /* same gradient as section 2 */
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* New font */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 800; /* Bold headings */
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+  font-weight: 400; /* Normal for paragraphs */
+}
+
+/* Header styling */
+header {
+  background-color: #ffffff;        /* White background */
+  color: #000000;                   /* Black text */
+  padding: 1rem;
+  text-align: center;
+  box-shadow:  0 6px 12px rgba(0,0,0,0.2); /* Drop shadow */
+}
+
+nav a {
+  color: #d41f3d;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}  
+
+/* Main content layout */
+main {
+  padding: 20px;
+}
+
+/* Card sections (demonstrating box model) */
+.card {
+  background: white;
+  border: 2px solid #ccc;   /* border */
+  padding: 20px;            /* space inside box */
+  margin: 20px 0;           /* space outside box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* drop shadow */
+}
+
+#styling-experience {
+  background: linear-gradient(135deg, #ffffff, #f3f8ff); /* soft gradient background */
+  border: 2px solid #2e8b57; /* green border to match theme */
+  border-radius: 12px;
+  padding: 50px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* strong shadow to stand out */
+  min-height: 400px;
+}
+
+/* Hover effect */
+#styling-experience:hover {
+  background: linear-gradient(135deg, #e6fff2, #ffffff); /* slight color shift */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* deeper shadow */
+  transform: translateY(-5px); /* lift up effect */
+  border-color: #f00f35; /* highlight border in red to show creativity */
+}
+
+/* Heading for this section */
+#styling-experience h2 {
+  color: #2e8b57; /* professional green */
+  font-weight: 700;
+  text-transform: uppercase; /* makes it bold & standout */
+  margin-bottom: 15px;
+}
+
+/* Paragraph for this section */
+#styling-experience p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  font-style: italic; /* creative touch */
+}
+
+/* Box Model Section */
+#box-model-experience {
+  background: linear-gradient(135deg, #ffffff, #f7f9ff); /* soft gradient */
+  border: 2px solid #444;
+  border-radius: 12px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  min-height: 520px; /* gives enough room for demo */
+}
+
+.box-model-demo {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+/* Each Layer */
+.margin {
+  background: #e8f5e9; /* light green for margin */
+  padding: 15px;
+  border: 1px dashed #2e7d32;
+}
+
+.border {
+  background: #fce4ec; /* soft pink for border */
+  padding: 15px;
+  border: 2px solid #d41f3d;
+}
+
+.padding {
+  background: #fff3cd; /* light yellow for padding */
+  padding: 15px;
+  border: 1px dashed #d4a017;
+}
+
+.content {
+  background: #bbdefb; /* light blue for content */
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #1976d2;
+}
+
+/* Add subtle hover effect */
+.box-model-demo div:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Buttons */
+button {
+  display: block;                  /* makes it block-level so margins work */
+  margin: 20px auto;               /* centers the button horizontally */
+  background: #d41f3d;           /* red background */  
+  color: white;                  /* white text */  
+  border: 1px solid #d41f3d;     /* red border for consistency */  
+  padding: 12px 30px;              /* wider button */
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 180px;                /* ensures minimum width */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: white;          /* flips to white background */     
+  color: #d41f3d;              /* flips text to red */    
+  border: 1px solid #d41f3d;       /* keeps border red */
+  transform: translateY(-5px) scale(1.05);  /* lift + slight zoom */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);   /* stronger shadow */
+}
+
+
+/* Footer */
+footer {
+  background: #1f1f1f; /* Dark footer */
+  padding: 20px;
+  text-align: center;
+  color: #e0e0e0; /* Light text */
+  font-size: 0.95rem;
+  border-top: 1px solid #333;
+  margin-top: 30px; /* pushes footer down from content above */
+}
